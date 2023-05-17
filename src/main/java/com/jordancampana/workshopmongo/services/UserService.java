@@ -38,7 +38,7 @@ public class UserService {
 	public User update(User newObj) {
 		User obj = findById(newObj.getId());
 		updateData(obj, newObj);
-		return repo.save(newObj);
+		return repo.save(obj);
 	}
 	
 	public void updateData (User old, User update) {
